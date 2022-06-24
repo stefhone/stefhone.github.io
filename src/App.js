@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/style/css/App.css';
+import { PortfolioContainer } from './containers/PortfolioContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="app" className="text-gray-400 bg-gray-900 body-font">
+      <div className="container mx-auto px-10 py-20">
+        <h1 className="text-3xl font-bold underline">Stefan Hone - Portfolio </h1>
+        <hr></hr>
+        <PortfolioContainer/>
+      </div>
+  </div>
   );
 }
 
